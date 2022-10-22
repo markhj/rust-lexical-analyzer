@@ -1,0 +1,9 @@
+/**
+ * A docblock to be ignored
+ */
+let below_docblock = 1;
+
+# A line to be ignored
+// A line to be ignored
+let x = 2; // Comment to be ignored
+let x = 3; # Comment to be ignored

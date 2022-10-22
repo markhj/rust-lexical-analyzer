@@ -1,0 +1,5 @@
+let name = "John Doe";
+
+if variable == 30 + 18 {
+    print "Hello world";
+}
