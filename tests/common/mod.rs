@@ -1,5 +1,6 @@
 use std::fs;
 use std::path::Path;
+use rust_lexical_analyzer::composer::{Fragment};
 use rust_lexical_analyzer::langdef::LanguageDefinition;
 use rust_lexical_analyzer::tokenizer::{TokenStream, TokenType};
 
@@ -15,6 +16,18 @@ pub fn test_stream(
         assert_eq!(
             assertions.get(i).unwrap().clone(),
             stream.get(i).unwrap().token_type,
+        );
+    }
+}
+
+pub fn test_statement(
+    statement: &Box<dyn Fragment>,
+    assertions: Vec<TokenType>,
+) {
+    for i in 0..assertions.len() {
+        assert_eq!(
+            assertions.get(i).unwrap(),
+            &statement.get_tokens().get(i as usize).unwrap().token_type
         );
     }
 }

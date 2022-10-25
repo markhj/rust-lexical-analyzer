@@ -1,9 +1,14 @@
+use crate::tokenizer::TokenType::{self, *};
+
 /// # Language Definition
 /// The struct describing the rules and looks of the language
 /// to be tokenized and interpreted
 #[derive(Debug, Clone, PartialEq)]
 pub struct LanguageDefinition {
     keywords: Vec<&'static str>,
+    statement_terminator: TokenType,
+    block_opener: TokenType,
+    block_closer: TokenType,
 }
 
 impl LanguageDefinition {
@@ -14,6 +19,9 @@ impl LanguageDefinition {
     ) -> LanguageDefinition {
         LanguageDefinition {
             keywords,
+            statement_terminator: Punctuator(';'),
+            block_opener: Punctuator('{'),
+            block_closer: Punctuator('}'),
         }
     }
 

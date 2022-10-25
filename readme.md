@@ -9,14 +9,12 @@
 This Rust-based lexical analyzer is used to tokenize and interpret a custom-designed interpreted language
 in your Rust project.
 
-To upgrade to the latest version run ``cargo update``.
-
 # Features
 Features in this lexical analyzer:
 
-- **Tokenizer**: Splits a string (document/file) into tokens such as operators, identifiers, literals, punctuators and keywords
+- **Tokenizer**: Splits a string (document/file) into a token stream containing operators, identifiers, literals, punctuators and keywords
 - **Composition** (Coming soon): Sorts tokens into structures (based on punctuators).
-- **Grammar** (Coming soon): Translates the series of tokens and maps the outcome to defined handlers- 
+- **Grammar** (Coming soon): Translates the series of tokens and maps the outcome to defined handlers. 
 
 # Installing
 
@@ -26,6 +24,8 @@ Add this in your ``Cargo.toml`` file:
 [dependencies.rust-config-reader]
 git = "https://github.com/markhj/rust-lexical-analyzer"
 ````
+
+To upgrade to the latest version run ``cargo update``.
 
 # How to use
 > **Gude will be completed when project is closer to being finished**.

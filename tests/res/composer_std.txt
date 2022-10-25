@@ -1,0 +1,9 @@
+if x == 30 {
+    if true {
+        print "Hello world";
+    } else {
+        print "nested else";
+    }
+} else {
+    print "else";
+}
