@@ -1,6 +1,8 @@
+#![allow(dead_code, unused_variables)]
+
 use std::fs;
 use std::path::Path;
-use rust_lexical_analyzer::composer::{Fragment};
+use rust_lexical_analyzer::fragments::Fragment;
 use rust_lexical_analyzer::langdef::LanguageDefinition;
 use rust_lexical_analyzer::tokenizer::{TokenStream, TokenType};
 

@@ -13,7 +13,7 @@ in your Rust project.
 Features in this lexical analyzer:
 
 - **Tokenizer**: Splits a string (document/file) into a token stream containing operators, identifiers, literals, punctuators and keywords
-- **Composition** (Coming soon): Sorts tokens into structures (based on punctuators).
+- **Composition**: Sorts tokens into structures (based on punctuators).
 - **Grammar** (Coming soon): Translates the series of tokens and maps the outcome to defined handlers. 
 
 # Installing
